@@ -158,6 +158,16 @@ text-indent: 50px;
 }
 
 
+/*People .table*/
+
+table tr#header{
+	font-weight: bold;
+}
+table td {
+	padding:5px;
+}
+
+
 /* Media queries */ 
 @media screen and (min-width:900px)
 {
