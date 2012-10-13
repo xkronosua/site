@@ -20,29 +20,30 @@ header {
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
+	background-size: cover;
 	background-position: 20% 20%;
 	padding: .6em 3em;
 	line-height: 1;
 }
 
 header h1{
-	margin-bottom: 10px;
 	color: #D10A14;
 	display: inline-block;
 	background-color: #F2D5D7;
 	opacity: 0.6;
+
 }
 
-header nav{
+header span{
 	float: right;
-	text-align: right
+	text-align: right;
 	display: inline-block;
-	background-image: url(http://cs323829.userapi.com/v323829017/2a93/a2lNqJdE9PI.jpg);
+	background-image: url(http://i.minus.com/ibtK0AopnR5fFL.png);
 	height: 120px;
 	width: 200px;
 }
 
-header nav:hover{
+header span:hover{
 	opacity:0.9;	
 }
 
@@ -102,8 +103,8 @@ a:active{
 }
 
 #tabs, #tabs nav a.active{
-	background: #F7F0F3;
-	color: #262424;
+	background: #f7f0f3;
+	color: #222;
 }
 
 #tabs nav
@@ -111,7 +112,8 @@ a:active{
 	position: relative;
 	overflow: hidden;
 	display: table;
-	background: #F7F0F3;
+	background-color: #EEE9BF;
+	width: 100%;
 }
 
 
@@ -122,12 +124,16 @@ a:active{
 	display:table-cell;
 	padding:1em;
 	text-align:center;
-	color: #222;
+	color: #262424;
 }
 
 #tabs nav a:hover,#tabs nav a:focus
 {
 	background:#eee
+	
+}
+#tabs nav a.active{
+	color: #d10a14;
 }
 
 #tabs article
