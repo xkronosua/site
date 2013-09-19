@@ -9,6 +9,7 @@ body {
   margin: 0 auto;
   max-width: 1000px;
   font: 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: justify;
   }
 
 a {
@@ -16,29 +17,52 @@ a {
 }
 
 header {
-	background: url(http://cs323829.userapi.com/v323829017/2a9b/CF7y7LKC9wQ.jpg) no-repeat  #f2d2d7; 
+	background: url(../images/header.jpg) no-repeat  #6F7579; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	background-position: 20% 20%;
-	padding: .6em 3em;
+	background-position: 20% 30%;
+	padding: 0em 2em;
 	line-height: 1;
-}
+
+
+	-webkit-filter: grayscale(44%) saturate(225%) sepia(51%) contrast(123%) brightness(20%);
+	/*
+		filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); 
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'old-timey\'><feColorMatrix type=\'matrix\' values=\'0.14 0.45 0.05 0 0 0.12 0.39 0.04 0 0 0.08 0.28 0.03 0 0 0 0 0 1 0\'/></filter></svg>#old-timey");
+    
+	-moz-filter: grayscale(44%) saturate(225%) sepia(51%) contrast(123%) brightness(40%);
+	
+	filter: saturate(225%);
+	filter: grayscale(44%);
+	filter: sepia(51%);
+	filter: contrast(123%);
+	filter: brightness(40%);
+	*/
+margin-bottom: 1em;
+	}
 
 header h1{
-	color: #D10A14;
+	color: #E6F6FF;
 	display: inline-block;
-	background-color: #F2D5D7;
+	background-color: #6F7579;
 	opacity: 0.6;
+	padding: 0.3em;
+  text-shadow: -3px -3px 2px rgba(0, 0, 0, 1);	
+}
 
+.shadows{
+	-webkit-box-shadow: 0px 7px 8px rgba(50, 56, 50, 0.46);
+-moz-box-shadow:    0px 7px 8px rgba(50, 56, 50, 0.46);
+box-shadow:         0px 7px 8px rgba(50, 56, 50, 0.46);
 }
 
 header span{
 	float: right;
 	text-align: right;
 	display: inline-block;
-	background-image: url(http://i.minus.com/ibtK0AopnR5fFL.png);
+	background-image: url(../images/logo.png);
 	height: 120px;
 	width: 200px;
 }
@@ -47,12 +71,22 @@ header span:hover{
 	opacity:0.9;	
 }
 
+header i {
+	font-size: 18pt;
+	color: #DCD188;
+
+}
 
 [role=main]{
 	padding:1.5em 3em;
 }
 article{
-	padding: 1em 0;
+
+	padding: 1em ;
+	-webkit-box-shadow: 0px 7px 8px rgba(50, 56, 50, 0.46);
+-moz-box-shadow:    0px 7px 8px rgba(50, 56, 50, 0.46);
+box-shadow:         0px 7px 8px rgba(50, 56, 50, 0.46);
+
 }
 footer{
 	background: #333;
@@ -63,14 +97,15 @@ footer{
 /* Typography */
 
 p{
-	font: 1em/1.5 Palatino, "Palatino Linotype", Georgia, Times, "Times New Roman", serif;
+	font-size: 1em/1.5 ;	/*Palatino, "Palatino Linotype", Georgia, Times, "Times New Roman", serif;
+*/
 }
 
-
+/*
 img{
 	max-width: 100%;
 	height: auto;
-}
+}*/
 
 
 blockquote{
@@ -105,7 +140,10 @@ a:active{
 #tabs, #tabs nav a.active{
 	background: #f7f0f3;
 	color: #222;
+
 }
+
+
 
 #tabs nav
 {
@@ -138,11 +176,14 @@ a:active{
 
 #tabs article
 {
-	padding:2em;
-	background-color: #F7F0F3;
+	margin: 1em 5em 2em 5em;
+	padding: 2em;
+	
+	background-color: #E7E8E4;
+
 }
 #tabs p {
-text-indent: 50px;
+/*text-indent: 50px;*/
 }
 .js-on #tabs article.active
 {
@@ -212,5 +253,56 @@ table td {
 	header nav div{
 	display: none;
 	}
+
+}
+
+
+#people{
+	display: block;
+}
+
+#people a.p_link{
+	display: inline-block;
+	width: 95%;
+	padding-top: 20px;
+	border-bottom: 5px solid #E6F6FF;
+	padding: 0.8em;
+	opacity: 0.98;
+}
+
+#people a.p_link:hover{
+	opacity:1;
+}
+
+#people a.p_link img{
+	display: inline-block;
+	float: left;
+	width: 150px;
+	margin-right: 50px;
+	-webkit-box-shadow: 0px -2px 2px rgba(50, 50, 50, 0.75);
+-moz-box-shadow:    0px -2px 2px rgba(50, 50, 50, 0.75);
+box-shadow:         0px -2px 2px rgba(50, 50, 50, 0.75);
+}
+
+#people a.p_link p{
+	display: block;
+	min-width: 250px;
+}
+
+#logo_bar{
+	display: inline-block;
+	
+	border-bottom: 1px solid #222fff;
+	width: 100%;
+	padding: 0.5em;
+	margin:0;
+	/*text-align: center;*/
+}
+
+#logo_bar img {
+	display: inline-block;
+	background-color: #fff;
+	height: 6em;
+	margin:.5em;
 
 }
