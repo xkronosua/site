@@ -176,7 +176,7 @@ a:active{
 
 #tabs article
 {
-	margin: 1em 5em 2em 5em;
+	margin: 1em 3em 2em 3em;
 	padding: 2em;
 	
 	background-color: #E7E8E4;
@@ -227,6 +227,9 @@ table td {
 		#tabs article {
 		display:block;
 		}
+		.text_box{
+			widht:100%;
+		}
 }
 @media screen and (max-width:480px)
 {
@@ -235,14 +238,14 @@ table td {
 	}
 
 	header nav a{
-		padding:.7em .8em
+		padding:.7em .8em;
 	}
 	header nav{
 		float: none;
 		margin: -.5em -3em 0;
 		background: #000;
 		overflow: hidden;
-		text-align: left
+		text-align: left;
 	}
 	header nav a{
 		border-right: 1px solid #222
@@ -253,28 +256,30 @@ table td {
 	header nav div{
 	display: none;
 	}
+	.text_box{
+			widht:100%;
+		}
 
 }
 
 
 #people{
-	display: block;
+	display: inline-block;
 }
 
-#people a.p_link{
+#people div.p_link{
 	display: inline-block;
-	width: 95%;
 	padding-top: 20px;
 	border-bottom: 5px solid #E6F6FF;
 	padding: 0.8em;
 	opacity: 0.98;
 }
 
-#people a.p_link:hover{
+#people div.p_link:hover{
 	opacity:1;
 }
 
-#people a.p_link img{
+#people div.p_link img{
 	display: inline-block;
 	float: left;
 	width: 150px;
@@ -291,7 +296,7 @@ box-shadow:         0px -2px 2px rgba(50, 50, 50, 0.75);
 
 #logo_bar{
 	display: inline-block;
-	
+	text-align: center;
 	border-bottom: 1px solid #222fff;
 	width: 100%;
 	padding: 0.5em;
@@ -305,4 +310,10 @@ box-shadow:         0px -2px 2px rgba(50, 50, 50, 0.75);
 	height: 6em;
 	margin:.5em;
 
+}
+
+article div.text_box{
+	display:inline-block;
+	border: 0px solid #222;
+	margin: 1em;
 }
