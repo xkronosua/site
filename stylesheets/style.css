@@ -9,7 +9,7 @@ body {
   margin: 0 auto;
   max-width: 1000px;
   font: 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-align: justify;
+  
   }
 
 a {
@@ -97,6 +97,7 @@ footer{
 /* Typography */
 
 p{
+	text-align: justify;
 	font-size: 1em/1.5 ;	/*Palatino, "Palatino Linotype", Georgia, Times, "Times New Roman", serif;
 */
 }
@@ -264,14 +265,19 @@ table td {
 
 
 #people{
-	display: inline-block;
+	width: 100%;
+
 }
 
 #people div.p_link{
 	display: inline-block;
 	padding-top: 20px;
-	border-bottom: 5px solid #E6F6FF;
+	width: 40%;
+	margin-bottom: 20px;
+	width: 80%;
+	
 	padding: 0.8em;
+	margin-right: 20px;
 	opacity: 0.98;
 }
 
@@ -281,17 +287,18 @@ table td {
 
 #people div.p_link img{
 	display: inline-block;
-	float: left;
+	
 	width: 150px;
-	margin-right: 50px;
+	margin-right: 10px;
 	-webkit-box-shadow: 0px -2px 2px rgba(50, 50, 50, 0.75);
 -moz-box-shadow:    0px -2px 2px rgba(50, 50, 50, 0.75);
 box-shadow:         0px -2px 2px rgba(50, 50, 50, 0.75);
 }
 
-#people a.p_link p{
-	display: block;
-	min-width: 250px;
+#people div.p_link p{
+	display: inline-block;
+	vertical-align: top;
+
 }
 
 #logo_bar{
@@ -301,14 +308,14 @@ box-shadow:         0px -2px 2px rgba(50, 50, 50, 0.75);
 	width: 100%;
 	padding: 0.5em;
 	margin:0;
+	vertical-align: bottom;
 	/*text-align: center;*/
 }
 
 #logo_bar img {
 	display: inline-block;
 	background-color: #fff;
-	height: 6em;
-	margin:.5em;
+	width: 190px;
 
 }
 
@@ -316,4 +323,13 @@ article div.text_box{
 	display:inline-block;
 	border: 0px solid #222;
 	margin: 1em;
+	vertical-align: top;
+}
+
+img.schemes {
+	display: block;	
+	width: 80%;
+	margin-left: 10%;
+	height: auto;
+
 }
